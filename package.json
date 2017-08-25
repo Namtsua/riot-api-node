@@ -1,22 +1,41 @@
 {
   "name": "riot-api-node",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Riot Games Development API",
   "main": "lib/index.js",
+  "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "node scripts/test.js"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5.3"
   },
   "repository": "miraage/riot-api-node",
   "keywords": [
     "Riot Games",
     "League of Legends",
-    "LoL",
+    "api",
     "lol"
   ],
   "author": "Mikhail Osher <yo@miraage.io>",
-  "license": "MIT",
+  "homepage": "https://github.com/miraage/riot-api-node#readme",
   "bugs": {
     "url": "https://github.com/miraage/riot-api-node/issues"
   },
-  "homepage": "https://github.com/miraage/riot-api-node#readme"
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "roots": [
+      "<rootDir>/lib"
+    ],
+    "testRegex": "\\.(?:test|spec)\\.js$"
+  }
 }
