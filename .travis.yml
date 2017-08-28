@@ -6,3 +6,6 @@ cache:
 env:
   global:
     - CI=true
+script:
+  - npm run test
+  - curl -s https://codecov.io/bash | bash

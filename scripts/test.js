@@ -8,7 +8,9 @@ process.on('unhandledRejection', err => {
 const jest = require('jest');
 const argv = process.argv.slice(2);
 
-if (!process.env.CI) {
+if (process.env.CI) {
+  argv.push('--coverage');
+} else {
   argv.push('--watch');
 }
 

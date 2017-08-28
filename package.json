@@ -8,10 +8,15 @@
     "test": "node scripts/test.js"
   },
   "dependencies": {
-
+    "axios": "^0.16.2",
+    "invariant": "^2.2.2",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "jest": "^20.0.4"
+    "@types/jest": "^20.0.8",
+    "flat": "^4.0.0",
+    "jest": "^20.0.4",
+    "nock": "^9.0.14"
   },
   "engines": {
     "node": ">=8",
@@ -30,6 +35,8 @@
     "url": "https://github.com/miraage/riot-api-node/issues"
   },
   "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "moduleFileExtensions": [
       "js"
     ],
