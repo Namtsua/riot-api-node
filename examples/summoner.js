@@ -3,7 +3,7 @@ const log = require('./log');
 
 log(
   'SummonerByName(Algalon Observer)',
-  client.summoner.byName('Algalon Observer 123'),
+  client.summoner.byName('Algalon Observer'),
 );
 
 log(
