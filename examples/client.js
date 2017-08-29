@@ -1,5 +1,5 @@
 const Client = require('../lib/Client');
 
-const client = new Client(process.env.API_KEY, process.env.API_REGION);
+const client = new Client(process.env.API_KEY, 'euw');
 
 module.exports = client;
